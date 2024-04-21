@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    float: left;
+    width: 50vw;
+    height: 100vh;
+
+    background-image: url("../img/img2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+
+    margin: 30% auto;
+    display: block;
+    color: white;
+    font-family: "Book Antiqua", serif;
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+
+    margin-top: 50%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.nav-item {
+
+    color: #c200ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+
+    text-decoration: underline;
+}
+
+main {
+
+    float: right;
+    width: 50vw;
+    height: 100vh;
+
+    background-color: #fff1e8;
+}
+
+.data-form {
+
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    font-family: "Book Antiqua", serif;
+    color: #94976d;
+}
+
+.text-input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff1e8;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.text-input:focus {
+    border-bottom: 2px solid #94976d;
+}
+
+.form-button {
+
+    appearance: none;
+    border: 0;
+    border-radius: 20px;
+    background: #ff96ba;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.form-button:hover {
+
+    background: #ff6193;
+}
+
+.form-link {
+
+    color: #94976d;
+    margin-left: 10px;
+    font-family: "Book Antiqua", serif;
+    text-decoration: none;
+}
+
+.form-link:hover {
+
+    text-decoration: underline;
+}
