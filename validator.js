@@ -35,5 +35,9 @@ function validatePassword(password) {
         : "INVALID";
 }
 
+/**
+ * Testing.
+ */
+
 console.log(validatePassword("pass"));
 console.log(validatePassword("TcSf12y"));
