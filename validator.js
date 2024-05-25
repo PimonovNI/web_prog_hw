@@ -7,23 +7,28 @@ function validatePassword(password) {
     let containLetter = false;
     let containDigit = false;
 
-    for (let i = 0; i < password.length; i++) {
-
-        if (password.charCodeAt(i) >= '0'.charCodeAt(0) && password.charCodeAt(i) <= '9'.charCodeAt(0)) {
+    let patter = function (code) {
+        if (code >= '0'.charCodeAt(0) && code <= '9'.charCodeAt(0)) {
             containDigit = true;
-            continue;
+            return true;
         }
 
-        if (password.charCodeAt(i) >= 'A'.charCodeAt(0)
-            && password.charCodeAt(i) <= 'Z'.charCodeAt(0)
-            || password.charCodeAt(i) >= 'a'.charCodeAt(0)
-            && password.charCodeAt(i) <= 'z'.charCodeAt(0)) {
+        if (code >= 'A'.charCodeAt(0)
+            && code <= 'Z'.charCodeAt(0)
+            || code >= 'a'.charCodeAt(0)
+            && code <= 'z'.charCodeAt(0)) {
             containLetter = true;
-            continue;
+            return true;
         }
 
-        return "INVALID";
+        return false;
     }
+
+    password.split('').forEach(letter => {
+        if (!patter(letter.charCodeAt(0))) {
+            return "INVALID";
+        }
+    });
 
     return containLetter && containDigit
         ? "VALID"
